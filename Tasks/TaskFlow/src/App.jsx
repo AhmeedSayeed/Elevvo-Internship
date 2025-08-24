@@ -3,6 +3,7 @@ import Features from './components/Features.jsx';
 import Reviews from './components/Reviews.jsx';
 import Plans from './components/Plans.jsx';
 import Footer from './components/Footer.jsx';
+import BackToTop from './components/BackToUpButton.jsx';
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Reviews />
       <Plans />
       <Footer />
+      <BackToTop />
     </>
   )
 }
