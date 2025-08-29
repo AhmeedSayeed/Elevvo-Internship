@@ -13,7 +13,7 @@ export default function Posts({ posts, currentPage, maxPages, goNextPage, goPrev
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}>
         {posts.length === 0 && <NoResults />}
-        {posts.length !== 0 && <ul className="grid grid-cols-3 gap-4 p-6">
+        {posts.length !== 0 && <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl gap-4 p-6">
             {posts.slice(currentPage * 9, currentPage * 9 + 9).map((post) =>
                 <li key={post.id}>
                     <Post {...post} />

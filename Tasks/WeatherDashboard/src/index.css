@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-basic: 'Inter', sans-serif;
+
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #CBD5E1;
+  --color-text-muted: #94A3B8;
+
+  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: theme(--font-basic);
+    color: whitesmoke;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: theme(--color-text-primary);
+  }
+
+  .text-secondary {
+    color: theme(--color-text-secondary);
+  }
+
+  .text-muted {
+    color: theme(--color-text-muted);
+  }
+
+  .shadow-soft {
+    box-shadow: theme(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: theme(--shadow-medium);
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+}
