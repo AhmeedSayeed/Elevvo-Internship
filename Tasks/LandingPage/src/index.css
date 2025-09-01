@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --gradient-primary: linear-gradient(135deg, #374151, #1f2937, #111827, #000000);
+    --gradient-secondary: linear-gradient(135deg, #1e3a8a, #1e40af, #3b82f6, #60a5fa);
+
+    --color-text-primary: #F1F5F9;
+    --color-text-secondary: #CBD5E1;
+    --color-text-muted: #94A3B8;
+
+    --font-family-primary: 'Raleway', sans-serif;
+}
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: theme(--font-family-primary);
+        background: theme(--gradient-primary);
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+
+@layer utilities {
+    .bg-primary {
+        background: var(--gradient-primary);
+    }
+
+    .bg-secondary {
+        background: var(--gradient-secondary);
+    }
+
+    .text-primary {
+        color: var(--color-text-primary);
+    }
+
+    .text-secondary {
+        color: var(--color-text-secondary);
+    }
+
+    .text-muted {
+        color: var(--color-text-muted);
+    }
+}
