@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import iphoneImg from '../assets/Iphone_17.jpg'
 
 export default function CallToAction() {
-    return <motion.section id="cta"  className="flex flex-col items-center justify-center py-20 gap-4"
+    return <motion.section id="cta"  className="flex flex-col items-center justify-center max-sm:py-8 py-20 gap-4"
             initial={{ opacity: 0, y: 60 }} 
             whileInView={{ opacity: 1, y: 0 }} 
             transition={{ duration: 1 }}
@@ -10,7 +10,7 @@ export default function CallToAction() {
             <h2 className="text-4xl max-md:text-2xl max-sm:text-lg text-primary font-medium mb-4">Call to Action</h2>
 
 
-            <div className='w-full flex max-sm:flex-col-reverse items-center max-sm:justify-center justify-between max-sm:px-4 max-md:px-8 max-lg:px-10 max-xl:px-16 px-32 max-sm:mt-32 mt-10 flex-row'>
+            <div className='w-full flex max-sm:flex-col-reverse items-center max-sm:justify-center justify-between max-sm:px-4 max-md:px-8 max-lg:px-10 max-xl:px-16 px-32 mt-10 flex-row'>
                 <div className='flex flex-col items-left justify-center gap-4 max-sm:w-[300px] max-sm:h-[300px] max-md:w-[400px] max-md:h-[400px] w-[500px] h-[500px]'>
                     <div className='flex flex-col gap-4 mb-4'>
                         <h2 className='text-4xl max-md:text-2xl max-sm:text-lg text-primary font-medium'>

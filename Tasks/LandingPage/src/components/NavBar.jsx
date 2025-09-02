@@ -71,7 +71,7 @@ export default function NavBar() {
                         <a
                             href={`#${link.id}`}
                             className={`relative pb-1 hover:text-blue-400 transition-colors text-xl outline-none ${
-                                activeSection === link.id 
+                                activeSection === link.id
                                     ? "text-blue-500 font-semibold"
                                     : ""
                             }`}

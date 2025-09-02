@@ -4,7 +4,7 @@ import { FEATURES } from "../data/features.js"
 import Feature from "../components/Feature.jsx"
 
 export default function Features() {
-    return <motion.section id="features" className="flex flex-col items-center justify-center py-20 gap-4"
+    return <motion.section id="features" className="flex flex-col items-center justify-center max-sm:py-8 py-20 gap-4"
             initial={{ opacity: 0, y: 60 }} 
             whileInView={{ opacity: 1, y: 0 }} 
             transition={{ duration: 1 }}
