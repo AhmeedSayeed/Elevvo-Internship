@@ -1,7 +1,5 @@
 # Elevvo-Internship
----
-
-# Frontend Tasks Submission
+## Frontend Tasks Submission
 
 ## Overview
 The requirement was to complete a minimum of **4 out of 8 tasks**.  
