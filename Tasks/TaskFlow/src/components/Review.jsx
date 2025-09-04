@@ -1,5 +1,5 @@
 export default function Review({ user, review }) {
-    return <div className="flex flex-col gap-2 max-sm:gap-1 text-center bg-purple-800 rounded-xl p-4 max-sm:w-[300px] w-[400px] h-[170px]
+    return <div className="flex flex-col gap-2 max-sm:gap-0.5 text-center bg-purple-800 rounded-xl p-4 max-sm:w-[300px] w-[400px] h-[170px]
             transition-all transition-discrete duration-400 hover:-translate-y-2">
         <div className="flex items-center justify-between gap-4 text-white mx-2">
             <div className="flex items-center gap-4 max-sm:gap-2">
