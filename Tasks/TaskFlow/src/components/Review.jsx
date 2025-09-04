@@ -3,8 +3,8 @@ export default function Review({ user, review }) {
             transition-all transition-discrete duration-400 hover:-translate-y-2">
         <div className="flex items-center justify-between gap-4 text-white mx-2">
             <div className="flex items-center gap-4 max-sm:gap-2">
-                <div className="bg-purple-500 p-3 rounded-4xl">
-                <i className="fas fa-user text-xl"></i>
+                <div className="bg-purple-500 p-3 max-sm:p-2 rounded-4xl">
+                <i className="fas fa-user text-xl max-sm:text-lg"></i>
                 </div>
                 <h3 className="text-xl max-sm:text-lg font-bold text-purple-200 my-4">{user}</h3>
             </div>
