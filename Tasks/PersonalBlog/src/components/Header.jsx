@@ -8,11 +8,11 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}>
         <div>
-            <FontAwesomeIcon icon={faUser} className="text-neonBlue text-8xl" />
+            <FontAwesomeIcon icon={faUser} className="text-neonBlue text-8xl max-sm:text-5xl" />
         </div>
         <div className='flex flex-col justify-center gap-4 text-left'>
-            <h1 className="text-2xl font-bold">Personal Blog</h1>
-            <p>Welcome to my blog! Here you’ll find posts displayed in elegant cards with a title,
+            <h1 className="text-2xl max-sm:text-base font-bold">Personal Blog</h1>
+            <p className='max-sm:text-[0.6rem]'>Welcome to my blog! Here you’ll find posts displayed in elegant cards with a title,
                 image, short description, and publication date. You can filter by category such as Tech,
                 Travel, or Food, and browse through pages easily.
                 </p>

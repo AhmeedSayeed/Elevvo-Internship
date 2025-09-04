@@ -10,7 +10,7 @@ export default function Post({ title, image, description, date, type }) {
         typeClass = "badge-food";
     }
 
-    return <div className="bg-card-hover card-blog p-4 rounded-lg shadow-lg relative">
+    return <div className="bg-card-hover card-blog p-4 rounded-lg shadow-lg h-[380px] relative">
         <h1 className="text-heading text-xl font-bold mb-4">{title}</h1>
         <div className="relative mb-4">
             <img className="w-full h-[200px] rounded-lg object-cover" src={image} alt={title} />

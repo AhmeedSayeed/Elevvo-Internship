@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Search({ searchRef, onSearch, onSelectCategory}) {
 
-    return <motion.section className="flex flex-row justify-center items-center gap-16 p-6 mb-8 rounded-2xl"
+    return <motion.section className="flex flex-row max-sm:flex-col justify-center items-center max-sm:gap-4 gap-16 p-6 mb-8 rounded-2xl"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}>

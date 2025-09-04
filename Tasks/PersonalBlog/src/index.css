@@ -224,6 +224,7 @@
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
     transform: translateY(-1px);
   }
+
   
   .input-search-rounded {
     background: transparent;
@@ -242,6 +243,7 @@
     outline: none;
   }
   
+  
   .btn-rounded {
     background-color: theme(--color-brand-blue);
     color: white;
@@ -258,6 +260,23 @@
     background-color: #2563EB;
     transform: scale(1.02);
   }
+
+  @media (max-width: 480px) {
+    .search-wrapper{
+      width: 95%;
+      padding: 0.2rem;
+    }
+
+    .input-search-rounded {
+      padding: 0.4rem 0rem 0.4rem 0.65rem;
+      font-size: 0.7rem;
+    }
+
+    .btn-rounded {
+      background-color: theme(--color-brand-blue);
+      padding: 0.5rem 1rem;
+    }
+  }
   
   .bg-header-gradient {
     background: linear-gradient(135deg, theme(--color-primary-dark) 0%, theme(--color-secondary-dark) 100%);
@@ -272,7 +291,7 @@
       transform: rotate(360deg);
     }
   }
-
+  
   .animate-spin {
     animation: spin 1s linear infinite;
   }
