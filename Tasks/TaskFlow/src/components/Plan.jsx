@@ -6,9 +6,9 @@ const notIncluded = <i className="fas fa-times text-red-500"></i>;
 
 
 export default function Plan({ type, price, features }) {
-    return <div className="flex flex-col gap-1 bg-purple-800 rounded-xl p-4
+    return <div className="flex flex-col gap-1 bg-purple-800 rounded-xl p-4 w-[350px] max-sm:w-[280px]
             transition-all transition-discrete duration-400 hover:-translate-y-2">
-            <div className="flex flex-row justify-between items-center gap-32 mb-2">
+            <div className="flex flex-row justify-between items-center mb-2">
                 <h2 className="text-3xl font-bold text-purple-200">{type}</h2>
                 <h3 className="text-xl font-semibold text-purple-300">{price}$/Month</h3>
             </div>
