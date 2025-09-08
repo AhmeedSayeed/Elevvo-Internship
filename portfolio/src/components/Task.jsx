@@ -1,5 +1,5 @@
 export default function Task({ title, image, link, description }) {
-    return <div className="bg-teal-hover w-[300px] h-[405px] flex flex-col  items-center rounded-2xl hover:shadow-challenge transition-all duration-300 hover:-translate-y-1">
+    return <div className="bg-teal-hover w-[300px] h-[405px] max-sm:w-[280px] flex flex-col  items-center rounded-2xl hover:shadow-challenge transition-all duration-300 hover:-translate-y-1">
         <img src={image} alt={title} className="w-full h-[250px] object-cover rounded-t-2xl" />
         <div className="flex flex-col gap-1 px-4 py-2">
             <h3 className="text-lg text-light-tertiary">{title}</h3>
